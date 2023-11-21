@@ -5,11 +5,11 @@
 </div>
 
 <!-- INTRODUÇÃO -->
-## DESCRIÇÃO DO PROJETO:
+## 📝 DESCRIÇÃO DO PROJETO:
 <p align="center">Bem-vindo à Agência EHPP, onde cada detalhe é cuidadosamente planejado para transformar suas viagens em experiências inesquecíveis. A Agência EHPP oferece uma solução eficiente para a administração de suas ofertas de viagens, com um sistema de CRUD (Create, Read, Update, Delete), onde é possível inserir seu local de destino, dia de partida, volta e consultar os preços.</p>
 
 <!-- DESENVOLVEDORES -->
-## DESENVOLVEDORES
+## 👨🏻‍💻 DESENVOLVEDORES
 
 <img src="https://i0.wp.com/kenzie.com.br/blog/wp-content/uploads/2021/01/kenzie_blog_desenvolvedor-de-software.jpg?fit=1200%2C630&ssl=1" alt="Computador programando" min-width="400px" max-width="400px" width="400px" align="right">
 
@@ -61,7 +61,7 @@
 </br>
 
 <!-- FERRAMENTAS UTILIZADAS -->
-## DESENVOLVIDO COM AS SEGUINTES FERRAMENTAS:
+## 🧰 DESENVOLVIDO COM AS SEGUINTES FERRAMENTAS:
 
 <table>
   <tr>
@@ -86,7 +86,7 @@
 </table>
 
 <!-- FUNCIONALIDADES -->
-## FUNCIONALIDADES
+## ⚙️ FUNCIONALIDADES
 
 <h3>1. Cadastro de Pacotes (Create):</h3>
 <ul>Permite a adição de novos pacotes de viagens. Sendo possível inserir o local de destino, data de saída,volta e o preço das acomodações.</ul>
@@ -104,7 +104,8 @@
 
 <br>
 
-<h2 align="left">📁 Projeto: </h2>
+<!-- REPOSITÓRIO -->
+<h2 align="left">📁 PROJETO: </h2>
 
 - Clonar o Repositório <br>
   `git clone https://github.com/EullerFPassos/github
@@ -114,6 +115,65 @@
   <img src="https://cdn.icon-icons.com/icons2/1673/PNG/512/downloadoutline_110860.png" alt="GitHub" style="width:50px;">
 </a>
 
-
-
 <br>
+
+<!-- POSTMAN -->
+## ✔️ EXEMPLO DE FUNCIONAMENTO:
+
+<h4>agenicaController:</h4>
+
+   - `GET`
+      - Endpoint: `/pacotes`
+      - Exemplo de Saída:
+      ```bash
+      [
+         {
+             "id": 1,
+             "destino": "Finlândia",
+             "data_chegada": "03/12/2023"
+             "data_Saída": "10/12/2023"
+             "preco": "15000"
+         }
+      ]
+      ```
+
+   - `POST`
+     - Endpoint: `/pacotes`
+     - Exemplo de entrada:
+     ```bash
+     [
+         {
+             "id": 1,
+             "destino": "Noruega",
+             "data_chegada": "05/12/2023"
+             "data_Saída": "10/12/2023"
+             "preco": "10000"
+         }
+     ]
+     ```
+  
+  - `PUT`
+      - Endpoint: `/pacotes/{id}`
+      - Exemplo de entrada:
+      ```bash
+      [
+         {
+             "destino": "Nova Zelândia",
+             "data_chegada": "03/12/2023"
+             "data_Saída": "10/12/2023"
+             "preco": "15000"
+         }
+      ]
+      ```
+
+  - `DELETE`
+      - Endpoint: `/pacotes/{id}`
+      - Exemplo de entrada:
+      ```bash
+      [
+             {
+             "id": 1,
+             }
+     ]
+       ```
+
